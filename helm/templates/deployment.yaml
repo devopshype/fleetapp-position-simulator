@@ -15,5 +15,6 @@ spec:
       containers:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         name: {{ .Values.deployment.name }}
-        ports:
-        - containerPort: {{ .Values.service.containerPort }}
+        env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: production-microservice
