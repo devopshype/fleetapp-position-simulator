@@ -13,10 +13,10 @@ spec:
         app: {{ .Values.deployment.name }}
     spec:
       containers:
-      - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+      - image: {{ .Values.image.repository }}
         name: {{ .Values.deployment.name }}
         env:
         - name: SPRING_PROFILES_ACTIVE
           value: production-microservice
       imagePullSecrets:
-      - name: {{ .Values.image.secret }}
+      - name: position-simulator
