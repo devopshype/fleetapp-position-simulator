@@ -5,5 +5,4 @@ deployment:
 image:
   repository: 047075577663.dkr.ecr.ap-south-1.amazonaws.com/fleetsimulator
   tag: latest
-  secret: position-simulator
 
