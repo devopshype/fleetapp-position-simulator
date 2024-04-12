@@ -3,6 +3,7 @@ deployment:
   replicaCount: 1
 
 image:
-  repository: public.ecr.aws/e4x7i6u2/fleetsimulator
+  repository: 047075577663.dkr.ecr.ap-south-1.amazonaws.com/fleetsimulator
   tag: latest
+  secret: position-simulator
 
