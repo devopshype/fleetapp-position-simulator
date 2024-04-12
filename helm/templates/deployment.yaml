@@ -19,4 +19,4 @@ spec:
         - name: SPRING_PROFILES_ACTIVE
           value: production-microservice
       imagePullSecrets:
-      - name: position-simulator
+        - name: position-simulator
